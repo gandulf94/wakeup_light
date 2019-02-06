@@ -1,0 +1,11 @@
+[Unit]
+Description=wakeup light
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/pi/wakeup_light
+ExecStart=/usr/bin/python3 /home/pi/wakeup_light/wakeup_light.py
+
+[Install]
+WantedBy=multi-user.target
