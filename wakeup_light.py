@@ -25,7 +25,7 @@ light_on = False
 
 def publish_(state, rel_brightness=0): # brightness in 0-1
   global light_on 
-  if state = "ON":
+  if state == "ON":
     light_on = True
   else:
     light_on = False
